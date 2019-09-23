@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="147" id="KGk-i7-Jjw" customClass="DeveloperTableViewCell" customModule="Trending_in_Github" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="147"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="146.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IsA-lm-23M" customClass="MDCCard">
+                        <rect key="frame" x="5" y="5" width="310" height="136.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z2Y-hj-pi9">
+                                <rect key="frame" x="10" y="10" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Atr-mm-rAJ"/>
+                                    <constraint firstAttribute="width" constant="40" id="IIH-wH-XBB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeJ-tg-QlI">
+                                <rect key="frame" x="60" y="10" width="230" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="2Td-eX-u12"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sdi-Dg-yQh">
+                                <rect key="frame" x="60" y="30" width="230" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Ora-X0-a85"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SCE-ie-oTv" userLabel="holder">
+                                <rect key="frame" x="10" y="61" width="280" height="20"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trending" translatesAutoresizingMaskIntoConstraints="NO" id="hQQ-o3-1hW">
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                        <color key="tintColor" red="1" green="0.27274412339999998" blue="0.29425103209999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Ua6-Og-Nsg"/>
+                                            <constraint firstAttribute="width" constant="20" id="aOP-eI-F6W"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popular Repo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Av-K8-J0M">
+                                        <rect key="frame" x="30" y="0.0" width="250" height="20"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="5Av-K8-J0M" firstAttribute="leading" secondItem="hQQ-o3-1hW" secondAttribute="trailing" constant="10" id="1Qi-Cr-JEh"/>
+                                    <constraint firstAttribute="trailing" secondItem="5Av-K8-J0M" secondAttribute="trailing" id="7t5-xA-X40"/>
+                                    <constraint firstItem="5Av-K8-J0M" firstAttribute="top" secondItem="hQQ-o3-1hW" secondAttribute="top" id="KRy-tJ-h9K"/>
+                                    <constraint firstItem="hQQ-o3-1hW" firstAttribute="leading" secondItem="SCE-ie-oTv" secondAttribute="leading" id="QmH-b1-Tsg"/>
+                                    <constraint firstItem="hQQ-o3-1hW" firstAttribute="top" secondItem="SCE-ie-oTv" secondAttribute="top" id="mFW-VZ-qz8"/>
+                                    <constraint firstAttribute="height" constant="20" id="oZy-77-nnX"/>
+                                    <constraint firstItem="5Av-K8-J0M" firstAttribute="bottom" secondItem="hQQ-o3-1hW" secondAttribute="bottom" id="yVR-QX-Mat"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4S-mL-YYv">
+                                <rect key="frame" x="10" y="101" width="280" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ScP-dr-d2J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKe-8A-kf4">
+                                <rect key="frame" x="10" y="124" width="280" height="7.5"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="E4S-mL-YYv" firstAttribute="top" secondItem="SCE-ie-oTv" secondAttribute="bottom" constant="20" id="5ew-yl-v1q"/>
+                            <constraint firstItem="E4S-mL-YYv" firstAttribute="leading" secondItem="SCE-ie-oTv" secondAttribute="leading" id="C73-tq-coo"/>
+                            <constraint firstAttribute="trailing" secondItem="aeJ-tg-QlI" secondAttribute="trailing" constant="20" id="FWd-oR-fdM"/>
+                            <constraint firstItem="aeJ-tg-QlI" firstAttribute="top" secondItem="z2Y-hj-pi9" secondAttribute="top" id="Igt-JV-KGh"/>
+                            <constraint firstItem="aeJ-tg-QlI" firstAttribute="leading" secondItem="z2Y-hj-pi9" secondAttribute="trailing" constant="10" id="OfJ-Uj-14O"/>
+                            <constraint firstItem="SCE-ie-oTv" firstAttribute="top" secondItem="Sdi-Dg-yQh" secondAttribute="bottom" constant="10" id="QcU-ed-YCO"/>
+                            <constraint firstItem="aKe-8A-kf4" firstAttribute="top" secondItem="E4S-mL-YYv" secondAttribute="bottom" constant="2" id="QvZ-ap-2LK"/>
+                            <constraint firstItem="z2Y-hj-pi9" firstAttribute="leading" secondItem="IsA-lm-23M" secondAttribute="leading" constant="10" id="Rwf-MS-0rl"/>
+                            <constraint firstAttribute="bottom" secondItem="aKe-8A-kf4" secondAttribute="bottom" constant="5" id="UPP-Q7-9Dp"/>
+                            <constraint firstItem="Sdi-Dg-yQh" firstAttribute="trailing" secondItem="aeJ-tg-QlI" secondAttribute="trailing" id="Wgi-jI-zYH"/>
+                            <constraint firstItem="z2Y-hj-pi9" firstAttribute="top" secondItem="IsA-lm-23M" secondAttribute="top" constant="10" id="X16-Fe-TKe"/>
+                            <constraint firstItem="SCE-ie-oTv" firstAttribute="leading" secondItem="z2Y-hj-pi9" secondAttribute="leading" id="dew-pV-Nef"/>
+                            <constraint firstItem="Sdi-Dg-yQh" firstAttribute="leading" secondItem="aeJ-tg-QlI" secondAttribute="leading" id="h6I-K2-UJF"/>
+                            <constraint firstItem="Sdi-Dg-yQh" firstAttribute="top" secondItem="aeJ-tg-QlI" secondAttribute="bottom" id="iFr-US-xb3"/>
+                            <constraint firstItem="aKe-8A-kf4" firstAttribute="leading" secondItem="E4S-mL-YYv" secondAttribute="leading" id="nXo-3g-DJg"/>
+                            <constraint firstItem="aKe-8A-kf4" firstAttribute="trailing" secondItem="E4S-mL-YYv" secondAttribute="trailing" id="sOA-Cd-YD0"/>
+                            <constraint firstItem="SCE-ie-oTv" firstAttribute="trailing" secondItem="aeJ-tg-QlI" secondAttribute="trailing" id="tHW-EX-K4n"/>
+                            <constraint firstItem="E4S-mL-YYv" firstAttribute="trailing" secondItem="SCE-ie-oTv" secondAttribute="trailing" id="uw2-co-pgq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="IsA-lm-23M" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Grf-TQ-mGc"/>
+                    <constraint firstItem="IsA-lm-23M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="N40-pO-nKE"/>
+                    <constraint firstAttribute="trailing" secondItem="IsA-lm-23M" secondAttribute="trailing" constant="5" id="aqD-hc-yDO"/>
+                    <constraint firstAttribute="bottom" secondItem="IsA-lm-23M" secondAttribute="bottom" constant="5" id="zOr-Iv-KWN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="card" destination="IsA-lm-23M" id="kUw-7D-KoY"/>
+                <outlet property="fireImage" destination="hQQ-o3-1hW" id="YjG-p1-afD"/>
+                <outlet property="nameLabel" destination="aeJ-tg-QlI" id="Haa-4k-sxB"/>
+                <outlet property="repoDescLabel" destination="aKe-8A-kf4" id="ywF-mW-cT7"/>
+                <outlet property="repoNameLabel" destination="E4S-mL-YYv" id="TNs-TD-Pyf"/>
+                <outlet property="userAvatar" destination="z2Y-hj-pi9" id="y70-Sb-Ur5"/>
+                <outlet property="usernameLabel" destination="Sdi-Dg-yQh" id="IM1-90-NIq"/>
+            </connections>
+            <point key="canvasLocation" x="-9" y="120"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="trending" width="36" height="36"/>
+    </resources>
+</document>
